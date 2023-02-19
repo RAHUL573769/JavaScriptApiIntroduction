@@ -41,3 +41,25 @@ li.innerText=`${datas.name}`;
 ul.appendChild(li);
 }
 }
+
+const loadUsers1=()=>{
+    const url='https://jsonplaceholder.typicode.com/users';
+    fetch(url).then(res=>res.json()).then(data=>displayUser1(data));
+}
+const container=document.getElementById("postContainer");
+
+const displayUser1=(data)=>{
+
+
+    for(let posts of data){
+        const div=document.createElement("div");
+        div.classList.add("post");
+    
+       div.innerHTML=`<h2>${posts.name}</h2>`
+ 
+console.log(posts);
+container.appendChild(div);
+
+}
+
+}

@@ -5,11 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    .post{
+display: grid;
+grid-template-columns: repeat(4,223px);
+    }
+    </style>
     <script src="index.js" defer></script>
 </head>
 <body>
 
     <div id="userlist"></div>
     <button onclick="loadUser()">Load User</button>
+
+
+    <div >
+
+
+<header>
+    <h1>Display Post</h1>
+
+    <div >
+<button onclick="loadUsers1()">Click To Display Post</button>
+
+<div class="post" id="postContainer">
+
+  <div class="post1"></div>
+</div>
+    </div>
+</header>
+    </div>
 </body>
 </html>
